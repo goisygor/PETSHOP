@@ -1,0 +1,44 @@
+/* Estilo para a barra de navegação */
+.navbar {
+    background-color: #FFD700;
+    /* Amarelo dourado */
+    color: #333;
+    /* Cor do texto */
+    padding: 10px;
+    /* Espaçamento interno */
+}
+
+.navbar a {
+    color: #333;
+    /* Cor dos links na barra de navegação */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+}
+
+.navbar a:hover {
+    color: rgb(38, 123, 235);
+    /* Cor dos links quando o mouse passa por cima */
+}
+
+/* Estilo para o conteúdo principal */
+.offcanvas-body {
+    background-color: #FFF;
+    /* Fundo branco para o conteúdo */
+    padding: 50px;
+    /* Espaçamento interno */
+    border-radius: 5px;
+    /* Cantos arredondados */
+}
+
+/* Estilo para links no conteúdo principal */
+.offcanvas-body a {
+    color: #007BFF;
+    /* Cor dos links no conteúdo */
+    text-decoration: none;
+    /* Remove o sublinhado dos links */
+}
+
+.offcanvas-body a:hover {
+    color: #0056b3;
+    /* Cor dos links quando o mouse passa por cima no conteúdo */
+}
