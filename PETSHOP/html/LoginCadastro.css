@@ -1,5 +1,10 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,800');
 
+body{
+	background-image: url(login.jpg);
+	background-repeat: no-repeat;
+	background-size: cover; /* Garante que a imagem cubra todo o fundo */
+	background-position: center; /* Centraliza a imagem no fundo */
+}
 * {
 	box-sizing: border-box;
 }
