@@ -18,52 +18,44 @@
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
   <!--Fazendo o NavBar-->
-  <nav class="navbar bg-body-tertiary fixed-top">
+  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
     <div class="container-fluid">
-      <a class="navbar-brand" href="WorldPlus.html">World Plus</a>
-      <a class="navbar-brand" href="Produtos.html">Produtos</a>
-      <a class="navbar-brand" href="#">Medicamentos</a>
-      <a class="navbar-brand" href="#">Animais</a>
+      <img src="HomeLogo.png" alt="" width="80px" height="50px">
+
       <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
         aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
         <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
           <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
         </div>
         <div class="offcanvas-body">
-          <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+          <ul class="navbar-nav ms-auto">
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="home.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link active" aria-current="page" href="Produtos.html">Produtos</a>
             </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Dropdown
-              </a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="#">Action</a></li>
-                <li><a class="dropdown-item" href="#">Another action</a></li>
-                <li>
-                  <hr class="dropdown-divider">
-                </li>
-                <li><a class="dropdown-item" href="#">Something else here</a></li>
-              </ul>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="">Animais</a>
             </li>
-          </ul>
-          <form class="d-flex mt-3" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+            <li class="nav-item">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="WorldPlus.html">World Plus</a>
+            </li>
+            <a class="nav-link" href="LoginCadastro.html">Login</a>
+            </li>
+            <form class="d-flex mt-3" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
         </div>
       </div>
     </div>
-  </nav>
+  </nav> 
   <!--Resgistro do PET-->
   <div class="card">
     <div class="card-header">
@@ -96,9 +88,34 @@
       </form>
     </div>
   </div>
+  
+  <p class="d-inline-flex gap-1">
+    <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+    <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+  </p>
+  <div class="row">
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample1">
+        <div class="card card-body">
+          Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+    </div>
+    <div class="col">
+      <div class="collapse multi-collapse" id="multiCollapseExample2">
+        <div class="card card-body">
+          Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
 
   <!--Cards-->
-  <div class="a">
+ <!-- <div class="a">
     <div class="notiglow"></div>
     <div class="notiborderglow"></div>
     <div class="notititle">Bem vindo a World Plus</div>
@@ -115,6 +132,6 @@
     <div class="notibody">Já conhece a nossa Loja ? 
       Não ? Clique aqui e venha fazer parte da nossa Loja !
     </div>
-  </div>
+  </div>-->
 </body>
 </html>
