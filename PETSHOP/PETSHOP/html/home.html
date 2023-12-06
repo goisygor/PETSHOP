@@ -5,81 +5,265 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animal World</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="css/home.css">
   <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
-  <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZwT" crossorigin="anonymous">
+
 </head>
 
 <body class="p-3 m-0 border-0 bd-example m-0 border-0">
 
   <!--Fazendo o Navbar-->
-  <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top" id="navbar">
-    <div class="container-fluid">
-      <img src="imagens/HomeLogo.png" alt="" width="80px" height="60px">
-
-      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
-        aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-        <div class="offcanvas-header">
-          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menu</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  <header class="bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 m-auto d-none d-lg-block">
+          <img class="logo" src="imagens/HomeLogo.png" alt="">
         </div>
-        <div class="offcanvas-body">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="Produtos.html">Produtos</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="">Animais</a>
-            </li>
-            <li class="nav-item">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="WorldPlus.html">World Plus</a>
-            </li>
-            <a class="nav-link" href="LoginCadastro.html">Login</a>
-            </li>
-            
+        <div class="col-md-12 col-lg-9">
+          <nav class="navbar navbar-expand-md navbar-light bg-light ">
+            <ul class="navbar-nav">
+              <li class="nav-item p-3">
+                <h6><i class="fa fa-map-marker"></i> <span><strong>Endereço, Rua manoel Rato 195, </strong><br>13.480-00
+                    Limeira-SP</span></h6>
+              </li>
+              <li class="nav-item p-3">
+                <h6><i class="fa fa-phone"></i> <span><strong><span class="ringo-phone">suporte@AnimalWorld.com.br
+                      </span></strong><br> <a href="#" class="callback-ringo">Email</a></span></h6>
+              </li>
+              <li class="nav-item p-3">
+                <h6><i class="fa fa-phone"></i> <span><strong><span class="ringo-phone">+55 (19) 98123-3010
+                      </span></strong><br> <a href="#" class="callback-ringo">Contato</a></span></h6>
+              <li class="nav-item p-3">
+                <h6><i class="far fa-comment-alt"></i> <span><strong>Login e Cadastro</strong><br><a
+                      href="LoginCadastro.html" class="jsBillChat" target="_self">Clique</a></span></h6>
+              </li>
+            </ul>
+          </nav>
+          <hr>
+
+          <nav id="default2" class="navbar navbar-expand-md navbar-light bg-light default2">
+            <div id="nav-size" class="container-fuil">
+              <div class="row">
+                <div class="d-none d-sm-block d-md-none">
+                  <a class="navbar-brand" href="#">Navbar</a>
+                </div>
+
+                <a id='logo-small' class="navbar-brand" href="#"><img src="https://net-city.net/img/favicon.png?v=new"
+                    alt=""></a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                  aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                  <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                      <a class="nav-link" href="#">Bem Vindo a nossa Loja Virtual !<span
+                          class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Páginas</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="Produtos.html">Produtos</a>
+                        <a class="dropdown-item" href="WorldPlus.html">World Plus</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Animais</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Cachorros</a>
+                        <a class="dropdown-item" href="#">Gatos</a>
+                        <a class="dropdown-item" href="#">Passarinhos</a>
+                      </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-toggle="dropdown"
+                        aria-haspopup="true" aria-expanded="false">Produtos</a>
+                      <div class="dropdown-menu" aria-labelledby="dropdown01">
+                        <a class="dropdown-item" href="#">Rações</a>
+                        <a class="dropdown-item" href="#">Remédios</a>
+                        <a class="dropdown-item" href="#">Brinquedos</a>
+                      </div>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fas fa-sign-in-alt"></i> Esperamos vocês em nossa Loja
+                        Física</a>
+                    </li>
+                  </ul>
+                  <ul class="navbar-nav navbar-right">
+                    <li class="nav-item active"> <a href="#" class="nav-link"></a></li>
+                    <li class="nav-item"> <a href="#" class="nav-link "></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </nav>
         </div>
       </div>
-    </div>
-  </nav>
 
-  <!-- Fazendo o Carousel-->
-  <div class="container">
-    <div id="carouselExampleFade" class="carousel slide carousel-fade">
+  </header>
+  <main role="main">
+
+    <!-- Carousel com imagens -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="imagens/HomeCarousel1.png" class="d-block w-100" alt="Primeiro Slide">
+          <img src="imagens/HomeCarousel1.png" class="d-block w-100" alt="Imagem 1">
         </div>
         <div class="carousel-item">
-          <img src="imagens/HomeCarousel2.webp" class="d-block w-100" alt="Segundo Slide">
+          <img src="imagens/HomeCarousel2.webp" class="d-block w-100" alt="Imagem 2">
         </div>
         <div class="carousel-item">
-          <img src="imagens/HomeCarousel3.jpg" class="d-block w-100" alt="Terceiro Slide">
+          <img src="imagens/HomeCarousel3.jpg" class="d-block w-100" alt="Imagem 3">
         </div>
       </div>
-      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+      <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Previous</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
         <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Next</span>
-      </button>
+        <span class="sr-only">Próximo</span>
+      </a>
     </div>
-    <br>
-    <br>
+    <div class="container marketing">
+
+      <!-- Three columns of text below the carousel -->
+      <div class="row">
+        <div class="col-lg-4">
+          <img src="imagens/HomeCard1.jpg" alt="Imagem 1" class="bd-placeholder-img rounded-circle" width="140"
+            height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="imagens/HomeCard1.jpg" alt="Imagem 1" class="bd-placeholder-img rounded-circle" width="140"
+            height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4">
+          <img src="imagens/HomeCard1.jpg" alt="Imagem 1" class="bd-placeholder-img rounded-circle" width="140"
+            height="140">
+          <h2>Heading</h2>
+          <p>Donec sed odio dui. Etiam porta sem malesuada magna mollis euismod. Nullam id dolor id nibh ultricies
+            vehicula ut id elit. Morbi leo risus, porta ac consectetur ac, vestibulum at eros. Praesent commodo cursus
+            magna.</p>
+          <p><a class="btn btn-secondary" href="#" role="button">View details &raquo;</a></p>
+        </div>
+      </div>
+
+      <!-- START THE FEATURETTES -->
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Já conhece nosso Plano de banho e tosa ?<span class="text-muted"> <br>Dê uma
+              olha nos benefícios que temos !</span>
+          </h2>
+          <p class="lead">Desfrute do Plano Mensal de Banho e Tosa em nosso pet shop, cuidadosamente elaborado para
+            manter seu companheiro peludo sempre impecável. Por apenas R$120,00 ao mês, oferecemos um pacote completo
+            que inclui quatro banhos revigorantes, uma tosa higiênica especializada e uma hidratação para manter a pele
+            e o pelo do seu pet saudáveis e radiantes.
+            Nossos profissionais altamente qualificados garantem um tratamento personalizado, utilizando produtos de
+            alta qualidade e técnicas que visam o bem-estar do seu animal de estimação. Além de economizar
+            financeiramente, você terá a certeza de proporcionar ao seu pet um cuidado regular e especializado,
+            promovendo não apenas a beleza, mas também a saúde e a felicidade.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="imagens/HomeCard2.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: 500x500">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+          </svg>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Curiosidades sobre nossa Loja !<span class="text-muted"><br></span></h2>
+          <p class="lead">
+            Bem-vindo ao Animal World, sua loja de referência no mundo pet! Há um ano e meio, embarcamos nesta jornada
+            apaixonante, oferecendo uma ampla variedade de produtos e serviços para atender todas as necessidades dos
+            seus queridos animais de estimação.
+            Na Animal World, não somos apenas uma loja; somos uma comunidade dedicada ao amor pelos pets. Nossa
+            trajetória é marcada pela paixão por proporcionar aos seus companheiros peludos uma vida mais feliz e
+            saudável. Construímos uma extensa gama de produtos cuidadosamente selecionados, garantindo qualidade e
+            variedade em cada item que oferecemos.
+            Acreditamos na importância de estabelecer laços sólidos com nossos clientes. A alta fidelidade que
+            cultivamos ao longo desses meses é reflexo do nosso compromisso em proporcionar um atendimento excepcional.
+            Aqui na Animal World, cada cliente é parte fundamental da nossa história, e é para eles que buscamos
+            constantemente aprimorar nossos serviços.
+            Não paramos por aí! Estamos crescendo, expandindo nossos horizontes para oferecer uma experiência ainda mais
+            completa. Tanto na loja física quanto na virtual, estamos trabalhando incessantemente para trazer mais
+            opções e planos que atendam às necessidades específicas dos seus pets. Queremos ser mais do que uma loja;
+            queremos ser seu parceiro na jornada do cuidado e bem-estar animal.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img src="imagens/HomeCard4.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: ">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+          </svg>
+        </div>
+      </div>
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7">
+          <h2 class="featurette-heading">Já é Natal aqui na Animal World !!<span class="text-muted"><br>Confira as
+              novidades e os descontos.</span></h2>
+          <p class="lead">🎄🐾 Celebre a magia do Natal na Animal World! 🐾🎄
+            É tempo de alegria, amor e muita diversão para os nossos queridos pets! Na Animal World, o Natal chegou mais
+            cedo, e estamos animados em compartilhar essa festa incrível com você e seus peludos companheiros.
+            🌟 Descubra Descontos Especiais:
+            Em espírito natalino, preparamos descontos irresistíveis em uma variedade de produtos que tornarão as festas
+            ainda mais especiais para os seus pets. Desde brinquedos encantadores até acessórios elegantes, temos tudo o
+            que você precisa para surpreender e mimar os seus companheiros de quatro patas.
+            🎁 Novidades que Encantam:
+            Além dos descontos, estamos apresentando novidades exclusivas para deixar o Natal dos seus pets ainda mais
+            mágico. Explore nossa seleção de produtos cuidadosamente escolhidos, desde deliciosos petiscos até caminhas
+            aconchegantes, para garantir que cada momento seja repleto de alegria.</p>
+        </div>
+        <div class="col-md-5">
+          <img src="imagens/HomeCard6.jpg" width="500" height="500" xmlns="http://www.w3.org/2000/svg"
+            preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: ">
+          <title>Placeholder</title>
+          <rect width="100%" height="100%" fill="#eee" /><text x="50%" y="50%" fill="#aaa" dy=".3em"></text>
+          </svg>
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <!-- /END THE FEATURETTES -->
+
+    </div><!-- /.container -->
 
     <!-- Fazendo o Card-->
 
@@ -108,9 +292,15 @@
         <div class="content">
           <img src="imagens/HomeCard2.jpg" alt="">
           <div class="title">banho e tosa do seu Pet por</div>
-          <div class="price">R$99,99</div>
-          <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros.
-            Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
+          <div class="price">R$120,00</div>
+          <div class="description">Adquirindo esse pacote esse mês o que você ganhará ?
+            <br>
+            4 banhos extremamentes rivigorantes.
+            <br>
+            1 tosa Higiênica.
+            <br>
+            1 hidratação.
+          </div>
         </div>
         <div class="card-footer">
           <small class="text-body-secondary"> <button class="Btn">
@@ -154,37 +344,43 @@
             6. Não deixe ele ter pulgas.
           </div>
         </div>
-        <button>
-          Buy now
-        </button>
       </div>
 
       <div class="card">
         <div class="content">
           <img src="imagens/HomeCard1.jpg" alt="">
-          <div class="title">World Plus</div>
-          <div class="price">R$50,00</div>
+          <div class="title"></div>
+          <div class="price"></div>
           <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros.
             Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
         </div>
-        <button>
-          Buy now
-        </button>
       </div>
 
       <div class="card">
         <div class="content">
           <img src="imagens/HomeCard1.jpg" alt="">
-          <div class="title">World Plus</div>
-          <div class="price">R$50,00</div>
+          <div class="title"></div>
+          <div class="price"></div>
           <div class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur at posuere eros.
             Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
         </div>
-        <button>
-          Buy now
-        </button>
       </div>
     </div>
+    <script src="javascript/home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
+    <footer class="container">
+      <p class="float-right"><a href="#">Back to top</a></p>
+      <p>&copy; 2017-2019 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
+    </footer>
+  </main>
 </body>
 
 </html>

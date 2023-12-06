@@ -1,65 +1,79 @@
-body{
-  background-image: url('FundoHome.jpg'); /* Substitua 'caminho/para/sua/imagem.jpg' pelo caminho real da sua imagem */
-  background-size: cover; /* Garante que a imagem cubra todo o fundo */
-  background-position: center; /* Centraliza a imagem no fundo */
-  background-repeat: no-repeat; /* Evita a repetição da imagem */
+/* Define o fundo do corpo com uma sobreposição de gradiente e uma imagem */
+body {
+  background-image: linear-gradient(rgba(39, 39, 39, 0.5), rgba(0, 0, 0, 0.5)), url(FundoHome.jpg);
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  padding-top: 0;
+  color: #000000; /* Cor do texto */
+  text-shadow: 1px 1px 2px rgb(0, 0, 0); /* Adiciona sombra ao texto */
 }
 
-/* Estilo para a barra de navegação */
-.navbar {
-  background-color: #FFD700;
-  /* Amarelo dourado */
-  color: #333;
-  /* Cor do texto */
+/* Remove a margem padrão de hr */
+hr {
+  margin: 0;
+}
+
+/* Estilo para o ícone no cabeçalho */
+header h6 i {
+  float: left;
+  font-size: 24px;
+  margin: 0 10px 5px 0; /* Margens compactadas em uma única linha */
+}
+
+/* Estilo para o texto no cabeçalho */
+header h6 span {
+  overflow: hidden;
+  display: block;
+  float: left;
+  font-size: 12px;
+  line-height: 18px;
+}
+
+/* Estilo para imagens de placeholder com gradiente de cores */
+.bd-placeholder-img {
+  background: linear-gradient(to right, #ffbb00, #11adea);
+}
+
+/* Estilo para o cabeçalho fixo no topo */
+#default2.fixed-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #000000; /* Cor de fundo quando fixo no topo */
+}
+
+/* Estilo para o logotipo pequeno */
+#logo-small img {
+  max-height: 40px;
+}
+
+/* Esconde o logotipo pequeno por padrão */
+#logo-small {
+  display: none;
+}
+
+/* Estilo para logotipo com largura máxima de 100% */
+img.logo {
+  max-width: 100%;
+}
+
+/* Adiciona sombra e borda a todas as imagens */
+img {
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border: 1px solid #000000;
+  padding: 10px; /* Espaçamento ao redor da imagem */
+}
+
+/* Adiciona borda e espaçamento aos elementos destacados 
+h2, p, a {
+  border: 1px solid #000000;
   padding: 10px;
-  /* Espaçamento interno */
-}
+}*/
 
-.navbar a {
-  color: #333;
-  /* Cor dos links na barra de navegação */
-  text-decoration: none;
-  /* Remove o sublinhado dos links */
-}
 
-.navbar a:hover {
-  color: rgb(38, 123, 235);
-  /* Cor dos links quando o mouse passa por cima */
-}
 
-/* Estilo para o conteúdo principal */
-.offcanvas-body {
-  background-color: #FFF;
-  /* Fundo branco para o conteúdo */
-  padding: 50px;
-  /* Espaçamento interno */
-  border-radius: 5px;
-  /* Cantos arredondados */
-}
-
-/* Estilo para links no conteúdo principal */
-.offcanvas-body a {
-  color: #007BFF;
-  /* Cor dos links no conteúdo */
-  text-decoration: none;
-  /* Remove o sublinhado dos links */
-}
-
-.offcanvas-body a:hover {
-  color: #0056b3;
-  /* Cor dos links quando o mouse passa por cima no conteúdo */
-}
-.row {
-  display: flex;
-  justify-content: center;
-}
-
-.card {
-  width: 200px;
-  height: 200px;
-  background-color: #f2f2f2;
-  margin: 50px;
-}
 
 /* Estilização do Card para adquirir o plano WorldPlus */
 .cards-container {

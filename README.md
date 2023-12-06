@@ -1,3 +1,0 @@
-# PETSHOP
-
-# IJI
