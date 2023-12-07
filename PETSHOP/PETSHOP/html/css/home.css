@@ -1,13 +1,20 @@
 /* Define o fundo do corpo com uma sobreposição de gradiente e uma imagem */
+
 body {
-  background-image: linear-gradient(rgba(39, 39, 39, 0.5), rgba(0, 0, 0, 0.5)), url(FundoHome.jpg);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.534), rgba(248, 248, 248, 0.393)), url(imgs/FundoHome.jpg);
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 16px;
   line-height: 1.6;
   padding-top: 0;
-  color: #000000; /* Cor do texto */
+  color: #ffffff; /* Cor do texto */
   text-shadow: 1px 1px 2px rgb(0, 0, 0); /* Adiciona sombra ao texto */
 }
+
+/* Adicione essa regra para garantir que o texto nos parágrafos seja branco */
+p {
+  color: #ffffff;
+}
+
 
 /* Remove a margem padrão de hr */
 hr {
@@ -32,7 +39,7 @@ header h6 span {
 
 /* Estilo para imagens de placeholder com gradiente de cores */
 .bd-placeholder-img {
-  background: linear-gradient(to right, #ffbb00, #11adea);
+  background: linear-gradient(to right, #7700ff, #edfaff);
 }
 
 /* Estilo para o cabeçalho fixo no topo */
@@ -61,7 +68,7 @@ img.logo {
 
 /* Adiciona sombra e borda a todas as imagens */
 img {
-  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 5px rgb(0, 0, 0);
   border: 1px solid #000000;
   padding: 10px; /* Espaçamento ao redor da imagem */
 }
