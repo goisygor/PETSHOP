@@ -1,9 +1,9 @@
 <?php
 session_start();
-include('database.php');
+include('formulario.php');
 
 if(empty($_POST['email']) || empty($_POST['senha'])) {
-    header('Location: index.php');
+    header('Location: sucesso.html');
     exit();
 }
 
@@ -19,11 +19,11 @@ $row = mysqli_num_rows($result);
 if($row == 1) {
     $_SESSION['email'] = $email;
     $_SESSION['conectado'] = true; // Adicione uma variável de sessão para indicar que o usuário está conectado
-    header('Location: index.php');
+    header('Location: sucesso.html');
     exit();
 } else {
     $_SESSION['nao_autenticado'] = true;
-    header('Location: erro.php');
+    header('Location: erro.html');
     exit();
 }
 ?>
