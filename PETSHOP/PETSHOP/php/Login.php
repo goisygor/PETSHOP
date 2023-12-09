@@ -3,7 +3,7 @@ session_start();
 include('formulario.php');
 
 if(empty($_POST['email']) || empty($_POST['senha'])) {
-    header('Location: sucesso.html');
+    header('Location: ../html/home.html');
     exit();
 }
 
@@ -19,7 +19,7 @@ $row = mysqli_num_rows($result);
 if($row == 1) {
     $_SESSION['email'] = $email;
     $_SESSION['conectado'] = true; // Adicione uma variável de sessão para indicar que o usuário está conectado
-    header('Location: sucesso.html');
+    header('Location: ../html/home.html');
     exit();
 } else {
     $_SESSION['nao_autenticado'] = true;

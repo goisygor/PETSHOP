@@ -29,7 +29,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $stmt->bind_param("sss", $nome, $email, $senha);
 
             if ($stmt->execute()) {
-                header("location: sucesso.html");
+                header("location: ../html/LoginCadastro.html");
                 exit();  // Adicionado para garantir que nenhum código adicional seja executado
             } else {
                 header("location: erro.html");
