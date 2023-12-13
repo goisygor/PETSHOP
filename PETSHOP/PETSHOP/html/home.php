@@ -43,9 +43,6 @@ include('../php/verifica_login.php');
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="Produtos.html">Produtos</a>
-            </li>
-            <a class="nav-link" href="LoginCadastro.html">Login</a>
-            </li>
 
           </li>
           <a class="nav-link" href="../php/logout.php">Logout</a>
