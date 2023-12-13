@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
@@ -44,7 +45,7 @@
             </form>
         </div>
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form action="../php/Login.php" method="post">
                 <h1>Entre</h1>
                 <div class="social-container">
                     <a href="https://web.facebook.com" class="social">
@@ -58,10 +59,11 @@
                     </a>
                 </div>
                 <span>Use sua Conta</span>
-                <input type="email" placeholder="Email" />
-                <input type="password" placeholder="Password" />
+                <input name = "email" type="email" placeholder="Email" />
+                <input name = "senha" type="password" placeholder="Password" />
                 <a href="https://accounts.google.com/AccountChooser/signinchooser?service=mail&continue=https%3A%2F%2Fmail.google.com%2Fmail%2F&flowName=GlifWebSignIn&flowEntry=AccountChooser&ec=asw-gmail-globalnav-signin&theme=glif">Esqueceu sua Senha?</a>
-                <button>Entre</button>
+                <button type="submit" name="login">Login</button>
+                
                 
                 <a href="home.html">
                     <button>

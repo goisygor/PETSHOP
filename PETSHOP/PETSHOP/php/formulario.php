@@ -1,12 +1,19 @@
 <?php
 include 'database.php';
 
-$servername = "localhost";
-$username = "root";
-$password = "";
-$dbname = "formulario"; // Substitua pelo nome real do seu banco de dados
+//$servername = "localhost";
+//$username = "root";
+//$password = "";
+//$dbname = "formulario"; // Substitua pelo nome real do seu banco de dados
 
 // Verificar se os dados foram recebidos por meio do método POST
+
+if((empty($_POST['nome'])) || (empty($_POST['email'])) || (empty($_POST['senha']))) {
+    echo "<script> alert ('hello word'); </script>";
+    header('Location: ../html/LoginCadastro.html');
+    exit();
+}
+
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $conn = new mysqli($servername, $username, $password, $dbname);
 
