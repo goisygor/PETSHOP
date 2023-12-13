@@ -11,10 +11,10 @@ include('../php/verifica_login.php');
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Animal World</title>
-  <link rel="stylesheet" href="css/home.css">
+  <link rel="stylesheet" href="css/homeLogin.css">
   <link rel="stylesheet" href="bootstrap-5.3.2-dist/css/bootstrap.min.css">
   <script src="bootstrap-5.3.2-dist/js/bootstrap.bundle.min.js"></script>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">    
   <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   
@@ -61,10 +61,10 @@ include('../php/verifica_login.php');
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="imagens/HomeCarousel1.png" class="d-block w-100" alt="Primeiro Slide">
+          <img src="imagens/HomeCarousel2.png" class="d-block w-100" alt="Primeiro Slide">
         </div>
         <div class="carousel-item">
-          <img src="imagens/HomeCarousel2.webp" class="d-block w-100" alt="Segundo Slide">
+          <img src="imagens/HomeCarousel1.webp" class="d-block w-100" alt="Segundo Slide">
         </div>
         <div class="carousel-item">
           <img src="imagens/HomeCarousel3.jpg" class="d-block w-100" alt="Terceiro Slide">
@@ -94,14 +94,14 @@ include('../php/verifica_login.php');
             Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
         </div>
         <div class="card-footer">
-          <small class="text-body-secondary"> <button class="Btn">
+        <a href="Pagamento.html"><small class="text-body-secondary"> <button class="Btn">
               Pay
               <svg class="svgIcon" viewBox="0 0 576 512">
                 <path
                   d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z">
                 </path>
               </svg>
-            </button></small>
+            </button></small></a>
         </div>
       </div>
 
@@ -114,14 +114,14 @@ include('../php/verifica_login.php');
             Interdum et malesuada fames ac ante ipsum primis in faucibus.</div>
         </div>
         <div class="card-footer">
-          <small class="text-body-secondary"> <button class="Btn">
+        <a href="Pagamento.html"><small class="text-body-secondary"> <button class="Btn">
               Pay
               <svg class="svgIcon" viewBox="0 0 576 512">
                 <path
                   d="M512 80c8.8 0 16 7.2 16 16v32H48V96c0-8.8 7.2-16 16-16H512zm16 144V416c0 8.8-7.2 16-16 16H64c-8.8 0-16-7.2-16-16V224H528zM64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H512c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm56 304c-13.3 0-24 10.7-24 24s10.7 24 24 24h48c13.3 0 24-10.7 24-24s-10.7-24-24-24H120zm128 0c-13.3 0-24 10.7-24 24s10.7 24 24 24H360c13.3 0 24-10.7 24-24s-10.7-24-24-24H248z">
                 </path>
               </svg>
-            </button></small>
+            </button></small></a>
         </div>
       </div>
 
@@ -137,9 +137,14 @@ include('../php/verifica_login.php');
     </div>
     <footer>
       <ul>
-          <li><a href="#">Localização</a></li>
-          <li><a href="#">Contato</a></li>
-          <li><a href="#">Sobre nós</a></li>
+        <div class="description">Bem-vindo ao universo encantador do "Animal World"! No coração do nosso Pet Shop, dedicamo-nos apaixonadamente a fornecer cuidados excepcionais e serviços de alta qualidade para os membros peludos da sua família...
+         <br>
+          <br>Rua Tereza Conceicao Silva,   Jardim Geuseppe Camole    CEP: 99982-992  (19) 99999-9999   animalworld@contato.com</br>
+          <br>
+                                                   CPNJ: 990900909090
+                                                   <br>
+                                                     Animal World™ LTDA
+        </div>
       </ul>
       <div class="social-icons">
           <a href="#"><i class="fa fa-facebook"></i></a>

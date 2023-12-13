@@ -185,12 +185,11 @@ button {
   transition-duration: .3s;
 }
 footer {
-  /*background: linear-gradient(to left, #280669, #000000);*/
-  background: #000000;
-  color: #fff;
+  background: rgba(228, 94, 5, 0.868);
+  color: #ffffff;
   padding: 20px;
   text-align: center;
-  box-shadow: 10px 0px 10px rgb(162, 0, 255, 0.247);
+  box-shadow: 10px 0px 10px rgb(255, 255, 255);
   bottom: 0;
   position: relative;
   width: 100%;
@@ -211,12 +210,16 @@ footer a {
   color: #fff;
   text-decoration: none;
   transition: color 0.5s;
-
-  
 }
 
 footer a:hover {
   color: #8982f1;
+}
+
+.social-icons {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
 }
 .social-icons {
   margin-top: 20px;
