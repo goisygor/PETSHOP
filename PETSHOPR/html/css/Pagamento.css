@@ -1,0 +1,232 @@
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  background-image: url(imgs/FundoPagamento.jpg);
+  background-size: cover;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 400px;
+  position: absolute;
+  left: 35%;
+  transform: translateX(-50%);
+  transition: 1s all ease-in-out;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+}
+
+.card-panel {
+  padding-bottom: 0;
+}
+
+#crickets {
+  width: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+table td:nth-child(1) {
+  width: 34px;
+}
+
+table td:nth-child(3) {
+  width: 65px;
+}
+
+.bold {
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.credit-card-box {
+  width: 400px;
+  height: 280px;
+  background: linear-gradient(135deg, #03A9F4, #1976D2);
+  border-radius: 15px;
+  color: #fff !important;
+  text-shadow: 0 1px 1px hsla(0, 0, 0, 0.3);
+}
+
+.input-field.cvv,
+.input-field.number,
+.input-field.card-holder,
+.input-field.card-expiration-date {
+  display: inline-block;
+}
+
+.input-field.cvv {
+  top: -6px;
+  margin-left: 6px !important;
+}
+
+.input-field label {
+  color: #fff;
+}
+
+.select-wrapper+label {
+  top: -1.8rem;
+}
+
+.select-wrapper span.caret {
+  top: 2px;
+  color: #fff;
+}
+
+input:not([type]),
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url],
+input[type=time],
+input[type=date],
+input[type=datetime-local],
+input[type=tel],
+input[type=number],
+input[type=search],
+textarea.materialize-textarea,
+.select-wrapper input.select-dropdown {
+  border-bottom: 1px solid #fff;
+}
+
+.input-card-number {
+  font-size: 30px !important;
+  width: 70px !important;
+  display: inline-block;
+  margin-right: 5px !important;
+}
+
+.input-card-cvv {
+  width: 30px !important;
+  display: inline-block;
+}
+
+.card-holder {
+  width: 150px !important;
+  margin-right: 10px;
+}
+
+.card-expiration-date {
+  display: inline !important;
+}
+
+.card-expiration-date .select-wrapper,
+.card-expiration-date input {
+  display: inline !important;
+  width: 50px !important;
+}
+
+.card-expiration-date .select-wrapper {
+  margin-right: 5px;
+}
+
+.card-expiration-date ul,
+.card-expiration-date li span {
+  width: 50px !important;
+}
+
+.logo img {
+  position: relative;
+  top: 0;
+  left: 290px;
+  width: 60px;
+  filter: invert(1);
+}
+
+.checkout {
+  margin: 0;
+}
+
+.btn-large {
+  margin: 10px 0;
+}
+
+.help {
+  text-align: center;
+}
+
+.animation-element {
+  opacity: 0;
+  position: relative;
+}
+
+/* Animation element sliding left */
+.animation-element.slide-left {
+  opacity: 0;
+  transition: all 500ms linear;
+  transform: translate3d(100px, -10px, 100px);
+}
+
+.animation-element.slide-left.in-view {
+  opacity: 1;
+  transform: translate3d(0, 0, 0);
+}
+
+.credit-card-box.animation-element:hover {
+  transition: all 200ms linear;
+  transform: translate3d(0, -2px, 0);
+  box-shadow: 0 16px 28px 0 rgba(0, 0, 0, 0.22), 0 25px 55px 0 rgba(0, 0, 0, 0.21);
+}
+
+/* Estiliza os dropdowns de mês e ano */
+.input-field.inline select {
+  border: none;
+  border-radius: 0;
+  background-color: transparent;
+  border-bottom: 1px solid #fff;
+  /* Adiciona uma linha de borda na parte inferior */
+  padding: 0;
+  margin: 0;
+  height: auto;
+  box-shadow: none;
+  color: #fff;
+}
+
+/* Remove a seta padrão do dropdown */
+.input-field.inline select.browser-default {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+/* Adiciona uma seta personalizada ao dropdown */
+.input-field.inline select.browser-default:after {
+  content: '\25BC';
+  /* Seta para baixo */
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 10px;
+  pointer-events: none;
+}
+
+/* Ajusta o estilo da seta para torná-la mais minimalista */
+.input-field.inline select.browser-default:after {
+  font-size: 1.2em;
+  line-height: 1;
+  color: #fff;
+}
+
+/* Define o estilo do texto selecionado no dropdown */
+.input-field.inline select option {
+  background-color: #000;
+  /* Cor de fundo ao selecionar uma opção */
+  color: #fff;
+}
+
+/* Ajusta a largura dos dropdowns */
+.input-field.inline select.browser-default {
+  width: 60px;
+  /* Ajuste a largura conforme necessário */
+}
