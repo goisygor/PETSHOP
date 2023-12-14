@@ -1,10 +1,10 @@
 <?php
 include 'database.php';
 
-//$servername = "localhost";
-//$username = "root";
-//$password = "";
-//$dbname = "formulario"; // Substitua pelo nome real do seu banco de dados
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "formulario"; // Substitua pelo nome real do seu banco de dados
 
 // Verificar se os dados foram recebidos por meio do método POST
 

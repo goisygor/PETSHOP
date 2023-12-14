@@ -31,7 +31,13 @@ funcionamento do site e
 
 PÁGINA HOME :
 <video src="giphy.mp4" controls title="Title"></video>
-"Conforme podemos observar, realizamos algumas modificações no design original proposto no Figma. Introduzimos cores distintas e implementamos botões com efeitos nos cards, visando tornar o site mais atrativo. Utilizamos amplamente a estrutura do Bootstrap, incorporando elementos como navbar, card e carrossel para otimizar a experiência do usuário. Vale ressaltar que os botões presentes nos cards foram inspirados no design do site (UIVERSE.IO) Além disso, desenvolvemos um footer simples, que contém uma breve descrição sobre nós e nosso endereço.
+"Conforme podemos observar, realizamos algumas modificações no design original proposto no Figma. Introduzimos cores distintas e implementamos botões com efeitos nos cards, visando tornar o site mais atrativo. Utilizamos amplamente a estrutura do Bootstrap, incorporando elementos como navbar, card e carrossel para otimizar a experiência do usuário. Vale ressaltar que os botões presentes nos cards foram inspirados no design do site (UIVERSE.IO) Além disso, desenvolvemos um footer simples, que contém uma breve descrição sobre nós, contato e nosso endereço. Tambem utilizamos estilisação dos botões, e um uso limitado do site para pessoas nao cadastrada, assim quando ela clica no botao de "pay" para efetuar compra, ela é direcionda para a tela de login.
+
+PÁGINA DE LOGIN E CADASTRO:
+<video src="giphy3.mp4" controls title="Title"></video>
+Nossa página de login e cadastro passou por significativas alterações em relação ao projeto inicial do Figma. No meio do desenvolvimento da página de cadastro, nos deparamos com um site completo, porém sem a funcionalidade JavaScript para realizar a transição entre telas. Ao percebermos a possibilidade de incorporar essa transição, decidimos unificar as páginas de login e cadastro em uma só.Inicialmente, imaginamos que a tarefa seria simples, mas, ao analisarmos o código CSS, constatamos diversos problemas que demandaram um tempo considerável para correção. A ausência de JavaScript adicionou um desafio adicional, exigindo que desenvolvêssemos essa funcionalidade por conta própria. Esse processo demandou um investimento significativo de tempo e esforço, mas, felizmente, conseguimos implementar a transição de tela desejada.
+Durante esse processo, também incorporamos alguns elementos adicionais para enriquecer a experiência do usuário. Adicionamos links para redes sociais e implementamos um botão, inspirado no design do (UIVERSE.IO), que facilita o retorno à página inicial. Essas adições visam proporcionar uma experiência de usuário mais completa e integrada.
+Aprendemos valiosas lições durante esse desafio, reforçando a importância da adaptação e resolução de problemas no desenvolvimento web.
 
 PÁGINA DE PRODUTOS:
 <video src="giphy1.mp4" controls title="Title"></video>
@@ -40,12 +46,6 @@ PÁGINA DE PRODUTOS:
 PÁGINA DE PAGAMENTOS:
 <video src="giphy2.mp4" controls title="Title"></video>
 Na página de pagamentos, adotamos uma abordagem de simplicidade e eficiência. A interface é composta por uma imagem de fundo que evoca a ideia de compra. Inspirados pelo design minimalista e funcional do site (UIVERSE.IO), incorporamos um card simples com um ícone interativo, proporcionando aos usuários uma maneira intuitiva de inserir os dados do cartão. Este card, originalmente proveniente do site UIVERSE.IO, foi personalizado por meio de ajustes nas configurações, como cor, data e hora no início do card, além da inclusão do nosso logotipo. Essas modificações visam garantir uma experiência coesa e alinhada com a identidade visual da nossa marca.
-
-PÁGINA DE LOGIN E CADASTRO:
-<video src="giphy3.mp4" controls title="Title"></video>
-Nossa página de login e cadastro passou por significativas alterações em relação ao projeto inicial do Figma. No meio do desenvolvimento da página de cadastro, nos deparamos com um site completo, porém sem a funcionalidade JavaScript para realizar a transição entre telas. Ao percebermos a possibilidade de incorporar essa transição, decidimos unificar as páginas de login e cadastro em uma só.Inicialmente, imaginamos que a tarefa seria simples, mas, ao analisarmos o código CSS, constatamos diversos problemas que demandaram um tempo considerável para correção. A ausência de JavaScript adicionou um desafio adicional, exigindo que desenvolvêssemos essa funcionalidade por conta própria. Esse processo demandou um investimento significativo de tempo e esforço, mas, felizmente, conseguimos implementar a transição de tela desejada.
-Durante esse processo, também incorporamos alguns elementos adicionais para enriquecer a experiência do usuário. Adicionamos links para redes sociais e implementamos um botão, inspirado no design do (UIVERSE.IO), que facilita o retorno à página inicial. Essas adições visam proporcionar uma experiência de usuário mais completa e integrada.
-Aprendemos valiosas lições durante esse desafio, reforçando a importância da adaptação e resolução de problemas no desenvolvimento web.
 
 CRITÉRIOS DE COMPETÊNCIAS E HABILIDADES(FRONT-END)
 

@@ -39,7 +39,7 @@ include('../php/verifica_login.php');
         <div class="offcanvas-body">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+              <a class="nav-link active" aria-current="page" href="home.php">Home</a>
             </li>
             <li class="nav-item">
               <a class="nav-link active" aria-current="page" href="Produtos.html">Produtos</a>
@@ -58,10 +58,10 @@ include('../php/verifica_login.php');
     <div id="carouselExampleFade" class="carousel slide carousel-fade">
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="imagens/HomeCarousel2.png" class="d-block w-100" alt="Primeiro Slide">
+          <img src="imagens/HomeCarousel1.png" class="d-block w-100" alt="Primeiro Slide">
         </div>
         <div class="carousel-item">
-          <img src="imagens/HomeCarousel1.webp" class="d-block w-100" alt="Segundo Slide">
+          <img src="imagens/HomeCarousel2.webp" class="d-block w-100" alt="Segundo Slide">
         </div>
         <div class="carousel-item">
           <img src="imagens/HomeCarousel3.jpg" class="d-block w-100" alt="Terceiro Slide">
