@@ -64,9 +64,10 @@ Priorizamos uma navegação eficiente para garantir que os usuários possam expl
 Integração de APIs:
 Optamos por simplificar o processo de login e cadastro, integrando as redes sociais como meio de autenticação. Apesar de alguns desafios típicos na integração de APIs, conseguimos implementar com sucesso os recursos de login e cadastramento através de plataformas de redes sociais, oferecendo aos usuários uma alternativa conveniente.
 
-Frameworks e bibliotecas:
+Frameworks e bibliotecas: bootstrap
 
-Teste e Depuração: 
+Teste e Depuração: Na página de cadastro ele não deixa você se cadastrar sem colocar um nome, sem colocar um email, na página de login você loga com email e com sua senha,
+caso você coloca uma senha fraca, ao entrar na página home ele mostra que você deve atualizar com uma senha mais segura.
 
 CRITÉRIOS DE COMPETÊNCIAS E HABILIDADES(BACK-END)
 
