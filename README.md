@@ -70,6 +70,8 @@ Teste e Depuração: Na página de cadastro ele não deixa você se cadastrar se
 caso você coloca uma senha fraca, ao entrar na página home ele mostra que você deve atualizar com uma senha mais segura.
 
 CRITÉRIOS DE COMPETÊNCIAS E HABILIDADES(BACK-END)
+![image](https://github.com/goisygor/PETSHOP/assets/124838881/5c5a287b-0a14-4d28-8cac-39f90ee26a61)
+
 
 
 
