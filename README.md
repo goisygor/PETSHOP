@@ -70,7 +70,6 @@ Teste e Depuração: Na página de cadastro ele não deixa você se cadastrar se
 caso você coloca uma senha fraca, ao entrar na página home ele mostra que você deve atualizar com uma senha mais segura.
 
 CRITÉRIOS DE COMPETÊNCIAS E HABILIDADES(BACK-END)
-![Alt text](image.png)
 
 
 
